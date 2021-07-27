@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+body,td,th {
+    font-size: 14px;
+    color: rgba(0,0,0,1);
+}
+body {
+    background-color: #D0E3F4;
+    margin:20px 20px;
+}
+a:link {
+    color: rgba(42,220,4,1);
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: rgba(42,220,4,1);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgba(255,79,81,1);
+}
+a:active {
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+nav{
+	height:100px;
+	width:1280px;
+	position:relative;
+	margin:0 0;
+}
+font-face{
+	font-family: "卿本佳人by落落";
+	src:url("../Fonts/【落落】卿本佳人.TTF");
+}
+.nav_zuo{
+    float: left;
+    height: 93px;
+    width: 850px;
+    margin: 0 0 0 50px;
+    font-family: "卿本佳人by落落";
+	font-size: 18px;
+	text-align: center;
+    border: 3px solid #9E9293;
+    border-radius: 10px;
+}
+.nav_you{
+	float:right;
+	width:280px;
+	height:100px;
+	position:relative;
+}
+.nav_you img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+section{
+	margin:50px 0 0 0;
+	width:1280px;
+	height:400px;
+}
+ul{
+	height:150px;
+	width:900px;
+}
+li{
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 300px;
+    margin: 20px 0 0 0;
+    line-height: 22px;
+    font-weight: bold;
+}
+#single{
+	width:900px;height:40px;
+	font-weight:bold;
+	text-align:right;
+	line-height:40px;
+}
+footer{
+   width:1280px; height:100px;
+}
+.footer_fenge{
+  	width:1280px; height:50px;
+	position:relative;
+}
+.footer_fenge img{
+	position:absolute;
+	top:5px;
+	left:310px;
+}
+.footer_sm{
+    width: 1280px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #7C7777;
+    border-radius: 5px;
+}

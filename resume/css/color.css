@@ -1,0 +1,86 @@
+/*=========================
+	FONT COLOR
+=========================*/
+
+blockquote > p,
+blockquote > i,
+.post-date,
+.sharing > span, .categoriez > span,
+.comment-titles > span,
+.categoriez > a:hover,
+.Recent-posts > li span,
+.upper-meta > span,
+.upper-meta li:hover,
+.vertical .hover-meta > ul li a:hover,
+.option-set.vertical > li a.selected,
+.quick-links > li a:hover,
+.tab-meta > span,
+.verticle-tab > li a:hover,
+.big-item-meta > span,
+.menu-linkz > li a:hover,
+.language-area > a:hover,
+.side-menu ul li > a:hover,
+.side-menu > ul > li.menu-item-has-children.active > a,
+.athr-widgt-meta > span,
+.follow-info > span,
+.my-skills-title > h4 span,
+.about-info > h4 > span,
+.butn-bg:hover
+{
+	color: #646fcb;	
+}
+
+
+
+
+/*=========================
+	BACKGROUND COLOR
+=========================*/
+
+ul.social-share > li a::after,
+.form-group .mtrl-select::before,
+.post-info,
+.about-author > figure::before,
+a.reply:hover,
+.Categoriez > li:hover,
+.tgz-cloud > a:hover,
+.Recent-posts > li:hover:before,
+.quote-box,
+a.play-video-btn,
+#topcontrol,
+.come-soon form button,
+.funfact,
+.big-item-meta > ul li a,
+.video-detail a.strip
+{
+	background: #646fcb;
+}
+
+
+
+/*=========================
+	BORDER COLOR
+=========================*/
+
+.owl-nav .owl-next:hover:before, 
+.owl-nav .owl-prev:hover:before,
+.slide-for-thumb li.slick-current.slick-active i img,
+.testimonial-caro .slick-dots > li.slick-active button::before 
+{
+	border-color:#646fcb;	
+}
+
+
+.success-stroke {
+  stroke: #646fcb;
+}
+
+.warning-stroke {
+  stroke: #646fcb;
+}
+
+.danger-stroke {
+  stroke: #646fcb;
+}
+
+

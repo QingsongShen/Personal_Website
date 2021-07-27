@@ -1,0 +1,52 @@
+/* 顶部文字样式 */
+.wenzi{
+	width: 1200px;
+	height: 120px;
+	/* border: 1px solid #f00; */
+}
+.tu1{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 900px;
+	height: 80px;
+	border: 2px solid #CC99FF;
+	border-radius: 6px;
+	float: left;
+}
+.tu2 img{
+	height: 80px;
+	margin-top: 20px;
+	margin-right: 20px;
+	float: right;
+}
+/* 中部列表图片样式 */
+section{
+	width: 1280px;
+	height: 350px;
+	margin-top: 20px;
+	/* border: 1px solid #f00; */
+}
+ul{
+	width: 250px;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 40px;
+	float: left;
+
+
+}
+
+ul li{
+	list-style-type: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	text-align: center;
+}
+ul li a:visited, ul li a:link{
+	text-decoration: none;
+	color: #000000;
+}
+ul li a:hover{
+	color: #FF9933;
+
+}

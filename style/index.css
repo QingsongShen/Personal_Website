@@ -1,0 +1,189 @@
+    					
+    						/* 导航栏样式 ,未预留自定义模块*/
+
+header{
+	width: 1280px;
+	height: 150px;
+	/* border: 1px solid gold;  */  /* 仅测试用 */
+}
+nav{
+	margin-top: 10px;
+	width: 930px;
+	height: 100px;
+	/* border: 1px solid #f00; */   /* 仅测试用 */
+	float: left;
+	
+}
+/* 导航栏左边的徽标 */
+.huibiao{
+	width: 130px;
+	height: 100px;
+	padding-left: 20px;
+	/* border: 1px solid green; */   /* 仅测试用 */
+	float: left;
+}
+.huibiao img{
+	width: 125px;
+}
+/* 导航栏文字列表 */
+.dh{
+	background-image: url(../image/image-index/daohangtiao.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	/* border: 1px solid #000000;    */  /* 仅测试用 */
+	width: 760px;
+	height: 100px;
+	float: right;
+	position: relative;
+}
+.dh ul li{
+	float: left;
+	width: 85px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;    /* 导航栏文字居中（上下左右） */
+	list-style-type: none;
+	font-family: "华文楷体";
+	font-size: 18px;
+	position: relative;
+	left: 60px;
+}
+/* 导航条文字链接样式 */
+.dh ul li a:visited, .dh ul li a:link{ 
+	text-decoration: none;
+	color: #000000;
+}
+.dh ul li a:hover{
+	color: #FF9966;
+	font-size: 20px;
+}
+/* 导航栏右侧小窝图标 */
+.xiaowo{
+	width: 200px;
+	height: 130px;
+	/* border: 2px solid skyblue;  */ /* 仅测试使用 */
+	float: right;
+	padding-top: 15px;
+}
+.xiaowo_1{
+	height: 130px;
+}
+						/* 正文样式 */
+article{
+	width: 1280px;
+	height: 350px;
+	/* border: 1px solid gold; */   /* 仅测试使用 */
+	position: relative;
+}
+/* B站二二娘和三三姐 */
+.bilibili{
+	margin-top: 40px;
+	width: 500px;
+	height: 300px;
+	/* border: 1px solid #f00;  */ /* 仅测试用 */
+	float: left;
+}
+.bilibili img{
+	width: 500px;
+}
+/* Google GIF */
+.google{
+	width: 600px;
+	height: 320px;
+	/* border: 1px solid #000;  */   /* 仅测试使用 */
+	float: left;
+	position: absolute;
+	top: 10px;
+	right: 100px;
+}
+.google img{
+	width: 200px;
+	margin-left: 200px;
+}
+/* 搜索框样式 */
+.search{
+	width:360px;
+	height: 50px;
+	/* border: 1px solid #f00; */    /* 仅测试使用 */
+	margin-left: 150px;       
+
+}
+#ipt1{
+	width: 300px;
+	height: 40px;
+	outline: none;
+	/* border: 1px solid #CC33FF; */
+	border-radius: 5px;
+	font-family: "宋体";
+	color: #B15BFF;
+	font-size: 16px;
+	background-color: #d0e3f4;
+}
+.search_2{
+	background-color: #d0e3f4;
+}
+/* 毒鸡汤 */
+.hua{
+	width: 600px;
+	height: 40px;
+	padding-top: 15px;
+	/* border: 1px solid gold;  */     /*仅测试用*/
+	text-align: center;
+	font-family: "华文楷体";
+	font-size: 15px;
+}
+
+/* 快捷网站图标 */
+.cy{
+	margin-top: 10px;
+	padding-left: 100px;
+	width: 600px;
+	height: 70px;
+	/* border: 1px solid #f00; */    /*仅测试用*/
+}
+.cy ul{
+	padding-top: 20px;
+	width: 80px;
+	height: 50px;
+	float: left;
+	/* border: 1px solid #00f;  */        /*仅测试用*/
+}
+.cy ul li{
+	list-style-type: none;
+	text-align: center;
+	font-family: "华文楷体";
+	font-size: 16px;
+
+}
+.cy ul li img{
+	margin-left: 0px;
+	width: 25px;
+}
+.cy ul li a:visited, .cy ul li a:link{
+	text-decoration: none;
+	color: #000;
+}
+.cy ul li a:hover{
+	color: #FFBB77;
+}
+/* 更多导航 */
+.daohang{
+	padding-top: 18px;
+	padding-left: 520px;
+	width: 90px;
+	font-family: "华文楷体";
+	font-size: 15px;
+}
+.daohang img{
+	margin-left: 0px;
+	width: 14px;
+	height: 10px;
+}
+.daohang a:visited, .daohang a:link{
+	text-decoration: none;
+	color: #000;
+}
+.daohang a:hover{
+	color: #FFBB77;
+	font-size: 18px;
+}

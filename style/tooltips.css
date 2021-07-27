@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.tooltips{
+	position:relative;/*关键*/
+	z-index:2;
+}
+
+.tooltips:hover{
+	z-index:3;
+	background:none;/*兼容IE*/
+}
+.tooltips span{
+	display:none;
+}
+.tooltips:hover span{           /*span标签仅在：hover时显示*/
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 9px;
+    width: 15em;
+    border: 1px solid #ffa6ff;
+    background-color: rgba(208,208,208,0.3);
+    padding: 3px;
+    color: black;
+    border-radius: 6px;
+}

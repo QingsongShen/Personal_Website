@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jerry sqsgoodluck@qq.com">
+    <title>相册集</title>
+    <link rel="stylesheet" type="text/css" href="resource/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/xiangce.css">
+    <script type="text/javascript" src="resource/plugin/jQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/xiangce.js"></script>
+</head>
+
+<body>
+    <div class="nav container">
+        <div class="row">
+            <div class="col-xs-9 col-sm-9 col-md-9 ">
+                <p>
+                    <h3 class="by"><span class="glyphicon glyphicon-education"></span>Always believe something wonderful will happen soon!</h3>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-md-3">
+                <audio autoplay="autoplay" controls="controls" style="opacity: 0.5;">
+                    <source src="resource/audio/月光水岸.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="container section" id="daohang">
+        <div class="row">
+            <div class="col-md-3 zuo">
+                <div class="row">
+                    <div class="col-md-12 center-block">
+                        <img src="image/image-index/tibiao.png" style="width: 130px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Jerry</p>
+                    </div>
+                </div>
+
+
+                <!-- 相册导航 -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-3 text-left menu-choice">
+                        <span><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;郑州大学</span>
+                        <ul class="menu-choice-sub">
+                            <li><a href="#">风景集</a></li>
+                            <li><a href="#">人物集</a></li>
+                            <li><a href="#">活动集</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-3 text-left menu-choice">
+                        <span><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;醉美河山</span>
+                        <ul class="menu-choice-sub">
+                            <li><a href="#">家乡风景集</a></li>
+                            <li><a href="#">旅行游记</a></li>
+                            <li><a href="#">2233沙雕们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-3 text-left menu-choice">
+                        <span><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;爱好收藏</span>
+                        <ul class="menu-choice-sub">
+                            <li><a href="#">唯美动漫</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 相册缩略图布局 -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <span style="color: #F8F8F8; font-size: 20px;"><span class="glyphicon glyphicon-option-vertical"></span>郑州大学<small style="color: gold; font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where our dream begins!</small></span>
+                    </div>
+                </div>
+
+
+                <!-- 风景集相册 -->
+
+
+                <!-- 缩略图 -->
+                <div class="row suo">
+                    <div class="suo-title col-md-2 col-md-offset-2">
+                        <p class="bg-success text-center">风景集</p>
+                    </div>
+                    <div class="suo-image-border col-md-8 center-block">
+                        <div class="suo-image">
+                            <a href="###"><img src="image/xiangce/zzu/fengjingji/1.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 展开图相册 -->
+                <div class="image-viewer-bg"></div>
+                <div class="picture-viewer container-fluid">
+                    <div class="row">
+                        <div class="picture col-xs-12 col-sm-12 col-md-12">
+                            <div class="row picture-top">
+                                <div class="col-md-2 col-xs-2 col-sm-2">
+                                    <span>大图模式</span>
+                                </div>
+                                <div class="col-md-9 col-xs-9 col-sm-9"></div>
+                                <div class="col-md-1 col-xs-1 col-sm-1"><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+                            </div>
+                            <div class="row">
+
+                                <div class="fenye col-md-1 col-xs-1 col-sm-1">
+                                    <span class="shang glyphicon glyphicon-chevron-left"></span>
+                                </div>
+
+
+                                <div class="picture-image col-md-7 col-xs-7 col-sm-7">
+                                    <img src="" class="showImg">
+                                </div>
+
+
+                                <div class="fenye col-md-1 col-xs-1 col-sm-1">
+                                    <span class="xia glyphicon glyphicon-chevron-right"></span>
+                                </div>
+
+
+                                <div class="picture-suo-s col-md-3 col-xs-3 col-sm-3">
+                                    <div class="row">
+                                        <div class="picture-title col-md-12 col-xs-12 col-sm-12 text-center">
+                                            <h4>测试</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <!-- 大图右侧小列表 -->
+                                        <div class="picture-suo col-md-12 col-xs-12 col-sm-12">
+                                            <!-- 图片行 -->
+                                            <div class="row suo-list">
+                                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                                    <div class="picture-suo-img suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/1.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/2.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/3.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/4.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/5.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/6.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/7.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/8.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row suo-list" style="display: none;">
+                                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                                    <div class="picture-suo-img suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/9.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/10.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/11.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/12.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/13.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/14.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/15.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/16.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row suo-list" style="display: none;">
+                                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                                    <div class="picture-suo-img suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/17.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/18.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/19.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/20.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/21.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/22.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/23.jpg" />
+                                                    </div>
+                                                    <div class="picture-suo-img">
+                                                        <img src="image/xiangce/zzu/fengjingji/24.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <!-- 分页符号 -->
+
+                                            <div class="row">
+                                                <div class="fanye col-md-12 col-xs-12 col-sm-12 text-center">
+                                                	<span class="qian glyphicon glyphicon-triangle-left"></span><span class="yeshu">1/5</span><span class="hou glyphicon glyphicon-triangle-right"></span>
+                                                </div>
+                                            </div>  
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+                <p>ceshi</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

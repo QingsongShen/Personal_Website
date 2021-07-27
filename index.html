@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to my website</title>
+	<link rel="stylesheet" type="text/css" href="style/common.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+
+
+<body>
+
+<!-- 以下是导航栏预留 -->
+	<header>
+<!-- 网站徽标+导航条 -->		
+		<nav>
+			<div class="huibiao"> 
+				<img src="image/image-index/huibiao.png">
+			</div>
+			<div class="dh">
+				<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="resume/index-1.html" target="_blank">个人简历</a></li>
+							<li><a href="#">相册集</a></li>
+							<li><a href="#">心情驿站</a></li>
+							<li><a href="#">搬砖吐槽</a></li>
+							<li><a href="#">网络巧匠</a></li>
+							<li><a href="contact me.html">与我联系</a></li>
+						</ul>		
+			</div>
+			<div class="cl"></div>
+		</nav>
+<!-- 导航条右侧美化 -->
+		<div class="xiaowo">
+			<div></div>
+			<div>
+				<img src="image/image-index/tibiao.png" class="xiaowo_1">
+			</div>
+		</div>
+	</header>
+	<div class="cl"></div>      <!-- 清除浮动 -->
+
+	<!-- 以下是内容预留 -->
+	<section >
+		<article>
+			<div class="bilibili">
+				<img src="image/image-index/bilibili.png">
+			</div>
+			<div class="google">
+				<img src="http://wx3.sinaimg.cn/large/da6ac54fgy1ftvsol0ytmg20oh0b4npe.gif">
+			<!-- 搜索框 -->
+				<form class="search" action="http://www.baidu.com/baidu" target="_blank">
+					<input type="text" name="word" id="ipt1" value=""  autocomplete="off" placeholder="&nbsp;&nbsp;✎...  偷得浮生半日闲～">
+
+					<input type="submit" value="☯☯☯" class="search_2">				
+				</form>
+				<!-- 毒鸡汤 -->
+				<div class="hua">
+					<p id="djt">
+						<script type="text/javascript" src="js/dujitang.js"></script>
+					</p>
+					<p> ―·❀·― </p>
+				</div>
+				<!-- 常用网站 -->
+
+				<div class="cy">
+					<ul>
+						<li><img src="image/image-index/W3.png"></li>
+						<li><a href="https://www.w3cschool.cn/">W3cschool</a></li>
+					</ul>
+					<ul>
+						<li><img src="image/image-index/ku.png"></li>
+						<li><a href="https://588ku.com/">千库网</a></li>
+					</ul>
+					<ul>
+						<li><img src="image/image-index/tencent.png"></li>
+						<li><a href="http://mail.qq.com">QQ邮箱</a></li>
+					</ul>
+					<ul>
+						<li><img src="image/image-index/github.ico"></li>
+						<li><a href="https://github.com/">GitHub</a></li>
+					</ul>
+					<ul>
+						<li><img src="image/image-index/taobao.png"></li>
+						<li><a href="http://taobao.com">淘宝</a></li>
+					</ul>
+					
+				</div>
+				<div class="cl"></div>      <!-- 清除浮动 -->
+				
+				<div class="daohang">
+					<img src="image/image-index/arrow.png"><span><a href="gengduozhandian.html" target="_blank">查看更多</a></span>
+				</div>
+			</div>
+
+		</article>
+	</section>
+
+
+	<!-- 尾部 -->
+	<footer>
+		<div class="wei1">
+			<div class="wei2">
+				<img src="image/image-index/fengexian.png" width="1000px" height="30px">
+			</div>
+			<div class="wei3">
+				<p>版权所有&copy;Jerry小窝2018-2020&nbsp;&nbsp;&nbsp;&nbsp;<script type="text/javascript" src="js/traffic.js"></script></p> 
+				<p><a href="http://ha.beian.miit.gov.cn/publish/query/indexFirst.action" target="_blank">豫ICP备18044815-1</a></p>
+				<p>本站测试浏览器：Google Chrome(79.0.3945.130)、Microsoft Edge</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+<!-- 百度搜索框提示 --> 
+<script  src="js/search suggestion.js"></script> 
+ 
+<!-- 提示框控制 -->
+<script type="text/javascript">
+	var params = {
+		"XOffset":0, //提示框位置横向偏移量,单位px
+		"YOffset":0, //提示框位置纵向偏移量,单位px
+		"width":250, //提示框宽度，单位px
+		"fontColor":"#000000", //提示框文字颜色
+		"fontColorHI":"#F00",	//提示框高亮选择时文字颜色
+		"fontSize":"15px",		//文字大小
+		"fontFamily":"宋体",	//文字字体
+		"borderColor":"#FFD0FF", 	//提示框的边框颜色
+		"bgcolorHI":"#FFECF5",		//提示框高亮选择的颜色
+		"sugSubmit":false		//在选择提示词条是是否提交表单
+	};
+ 	BaiduSuggestion.bind("ipt1",params);
+</script>
+</html>
+
+<!-- ―·❀·― -->

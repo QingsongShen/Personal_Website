@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>更多站点</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/gengduozhandian.css">
+    <link rel="stylesheet" type="text/css" href="style/tooltips-daohang.css">
+    <script type="text/javascript" src="resource/plugin/jQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/zhandian.js"></script>
+</head>
+
+<body id="top">
+    <!-- 以下是导航栏预留 -->
+    <header>
+        <nav>
+            <img src="image/daohang/qingsong.png">
+        </nav>
+        <div class="m_toolbar" id="toolbarContainer">
+            <!-- 导航栏上部分选项文字 -->
+            <ul class="tab">
+                <li class="menuli active" id="web">网页</li>
+                <li class="menuli" id="video">视频</li>
+                <li class="menuli" id="community">社区</li>
+                <li class="menuli" id="image">图片</li>
+                <li class="menuli" id="music">音乐</li>
+                <li class="menuli" id="wiki">百科</li>
+                <li class="menuli" id="translate">翻译</li>
+            </ul>
+            <div class="cl"></div>
+            <!--  导航栏下面各种分类聚合 -->
+            <ul class="panel">
+                <!-- 网页搜索聚合 -->
+                <li class="" id="web-1">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="web-1-jizhun">
+                                    <img src="image/daohang/search/baidu.png">
+                                </li>
+                                <li class="subMenu" id="google">
+                                    <img src="image/daohang/search/Google.png">
+                                </li>
+                                <li class="subMenu" id="bing">
+                                    <img src="image/daohang/search/bing.png">
+                                </li>
+                                <li class="subMenu" id="sougou">
+                                    <img src="image/daohang/search/sougou.png">
+                                </li>
+                                <li class="subMenu" id="youdao">
+                                    <img src="image/daohang/search/youdao.png">
+                                </li>
+                                <li class="subMenu" id="qihoo360">
+                                    <img src="image/daohang/search/360.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <form action="https://cn.bing.com/search" target="_blank">
+                        <div class="ipt-wr">
+                            <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                        </div>
+                        <div class="btn-wr">
+                            <input class="search" type="submit" value="搜索">
+                        </div>
+                    </form>
+                    <!--<div class="opt-wr">
+                         <div class="m-toolbar-provider"> 
+                            	<a class="baidu" style="" category="baidu">baidu</a>
+                        		<a class="google" style="" category="google">google</a>
+                        		<a class="bing" style="" category="bing">bing</a>
+                        		<a class="sougou" style="" category="sougou">sougou</a>
+                        		<a class="youdao" style="" category="youdao">youdao</a>
+                        		<a class="qihoo360" style="" category="qihoo360">qihoo360</a>
+
+                            </div>   
+                        
+                    </div>-->
+                </li>
+                <!-- 视频搜索聚合 -->
+                <li class="" id="video-1" style="display: none;">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="video-1-jizhun">
+                                    <img src="image/daohang/search/bilibili.png">
+                                </li>
+                                <li class="subMenu" id="aiqiyi">
+                                    <img src="image/daohang/search/aiqiyi.png">
+                                </li>
+                                <li class="subMenu" id="youku">
+                                    <img src="image/daohang/search/youku.png">
+                                </li>
+                                <li class="subMenu" id="tengxunvideo">
+                                    <img src="image/daohang/search/tengxunvideo.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <div class="ipt-wr">
+                        <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                    </div>
+                    <div class="btn-wr">
+                        <input class="search" type="submit" value="搜索">
+                    </div>
+                </li>
+                <!-- 社区搜索聚合 -->
+                <li class="" id="community-1" style="display: none;">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="community-1-jizhun">
+                                    <img src="image/daohang/search/baidutieba.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <div class="ipt-wr">
+                        <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                    </div>
+                    <div class="btn-wr">
+                        <input class="search" type="submit" value="搜索">
+                    </div>
+                </li>
+                <!-- 图片搜索聚合 -->
+                <li class="" id="image-1" style="display: none;">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="image-1-jizhun">
+                                    <img src="image/daohang/search/baidu.png">
+                                </li>
+                                <li class="subMenu" id="google">
+                                    <img src="image/daohang/search/Google.png">
+                                </li>
+                                <li class="subMenu" id="bing">
+                                    <img src="image/daohang/search/bing.png">
+                                </li>
+                                <li class="subMenu" id="sougou">
+                                    <img src="image/daohang/search/sougou.png">
+                                </li>
+                                <li class="subMenu" id="youdao">
+                                    <img src="image/daohang/search/youdao.png">
+                                </li>
+                                <li class="subMenu" id="qihoo360">
+                                    <img src="image/daohang/search/360.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <div class="ipt-wr">
+                        <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                    </div>
+                    <div class="btn-wr">
+                        <input class="search" type="submit" value="搜索">
+                    </div>
+                </li>
+                <!-- 音乐搜索聚合 -->
+                <li class="" id="music-1" style="display: none;">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="music-1-jizhun">
+                                    <img src="image/daohang/search/xiami.png">
+                                </li>
+                                <li class="subMenu" id="baidu">
+                                    <img src="image/daohang/search/baidu.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <div class="ipt-wr">
+                        <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                    </div>
+                    <div class="btn-wr">
+                        <input class="search" type="submit" value="搜索">
+                    </div>
+                </li>
+                <!--  百科搜索聚合 -->
+                <li class="" id="wiki-1" style="display: none;">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="wiki-1-jizhun">
+                                    <img src="image/daohang/search/baidubaike.png">
+                                </li>
+                                <li class="subMenu" id="wikibaike">
+                                    <img src="image/daohang/search/wikibaike.png">
+                                </li>
+                                <li class="subMenu" id="mengniangbaike">
+                                    <img src="image/daohang/search/mengniangbaike.png">
+                                </li>
+                                <li class="subMenu" id="sougou">
+                                    <img src="image/daohang/search/sougou.png">
+                                </li>
+                                <li class="subMenu" id="youdao">
+                                    <img src="image/daohang/search/youdao.png">
+                                </li>
+                                <li class="subMenu" id="qihoo360">
+                                    <img src="image/daohang/search/360.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <div class="ipt-wr">
+                        <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                    </div>
+                    <div class="btn-wr">
+                        <input class="search" type="submit" value="搜索">
+                    </div>
+                </li>
+                <!-- 翻译搜索聚合 -->
+                <li class="" id="translate-1" style="display: none;">
+                    <div class="m-toolbar-search">
+                        <div class="m-toolbar-search-logo" id="web-logo">
+                            <ul>
+                                <li class="subMenu" id="translate-1-jizhun">
+                                    <img src="image/daohang/search/baidu.png">
+                                </li>
+                                <li class="subMenu" id="google">
+                                    <img src="image/daohang/search/Google.png">
+                                </li>
+                                <li class="subMenu" id="youdao">
+                                    <img src="image/daohang/search/youdao.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle"><img src="image/daohang/xiala.png" style="width: 15px; z-index: 22; cursor: pointer; position: absolute; left: 162px; top: 5px;"></div>
+                    <div class="ipt-wr">
+                        <input class="s_ipt keyword" type="text" name="q" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off">
+                    </div>
+                    <div class="btn-wr">
+                        <input class="search" type="submit" value="搜索">
+                    </div>
+                </li>
+            </ul>
+    </header>
+    <!-- 以下是内容预留 -->
+    <section>
+        <article>
+        	<!-- 生物技术 -->
+        	<div class="container">
+        		<span>生物技术</span>
+        		<ul class="list-style">
+        			<li><a href="https://www.ncbi.nlm.nih.gov/" target="_blank" class="tooltips">NCBI <span>美国国立生物技术信息中心</span></a></li>
+        			<li><a href="">Nature官网</a></li>
+        			<li><a href="">Science官网</a></li>
+        			<li><a href="http://www.bioon.com/" target="_blank">生物谷</a></li>
+        			<li><a href="http://www.ebi.ac.uk/" target="_blank" class="tooltips">EBI <span>欧洲生物信息研究所</span></a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- 平面设计 -->
+        	<div class="container">
+        		<span>平面设计</span>
+        		<ul class="list-style">
+        			<li><a href="">千库网</a></li>
+        			<li><a href="">Nature官网</a></li>
+        			<li><a href="">Science官网</a></li>
+        			<li><a href="">生物谷</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- IT技术 -->
+        	<div class="container">
+        		<span>IT技术</span>
+        		<ul class="list-style">
+        			<li><a href="https://www.w3cschool.cn/" target="_blank">W3cschool</a></li>
+        			<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+        			<li><a href="https://www.jquery123.com/" target="_blank">jQuery中文网</a></li>
+        			<li><a href="https://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- 常用工具 -->
+        	<div class="container">
+        		<span>常用工具</span>
+        		<ul class="list-style">
+        			<li><a href="">W3cschool</a></li>
+        			<li><a href="">GitHub</a></li>
+        			<li><a href="">Science官网</a></li>
+        			<li><a href="">生物谷</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- 视频ﾟヽ(｡◕‿◕｡)ﾉﾟ -->
+        	<div class="container">
+        		<span>视频ﾟヽ(｡◕‿◕｡)ﾉﾟ</span>
+        		<ul class="list-style">
+        			<li><a href="">W3cschool</a></li>
+        			<li><a href="">GitHub</a></li>
+        			<li><a href="">Science官网</a></li>
+        			<li><a href="">生物谷</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- 网购 -->
+        	<div class="container">
+        		<span>网购（๑￫‿ฺ￩๑）</span>
+        		<ul class="list-style">
+        			<li><a href="">W3cschool</a></li>
+        			<li><a href="">GitHub</a></li>
+        			<li><a href="">Science官网</a></li>
+        			<li><a href="">生物谷</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- 小说 -->
+        	<div class="container">
+        		<span>小说</span>
+        		<ul class="list-style">
+        			<li><a href="">W3cschool</a></li>
+        			<li><a href="">GitHub</a></li>
+        			<li><a href="">Science官网</a></li>
+        			<li><a href="">生物谷</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+        	<!-- 漫画 -->
+        	<div class="container">
+        		<span>漫画ᕦ(ò_óˇ)ᕤ </span>
+        		<ul class="list-style">
+        			<li><a href="http://manga.bilibili.com/" target="_blank">哔哩哔哩漫画</a></li>
+        			<li><a href="https://ac.qq.com/" target="_blank">腾讯动漫</a></li>
+        			<li><a href="http://www.u17.com/" target="_blank">有妖气</a></li>
+        			<li><a href="https://www.dmzj.com/" target="_blank">动漫之家</a></li>
+        			<li><a href="http://www.ishangman.com/" target="_blank">i尚漫</a></li>
+        			<li><a href="http://www.rigengjihua.cn/" target="_blank">日更计划</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href="">这是测试1</a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        			<li><a href=""></a></li>
+        		</ul>
+        	</div>
+        	<div class="cl"></div>
+
+        </article>
+        <div class="back-top"><a href="#top">†返回顶部</a></div>
+    </section>
+    <!-- 尾部 -->
+    <footer>
+        <div class="wei1">
+            <div class="wei2">
+                <img src="image/image-index/fengexian.png" width="1000px" height="30px">
+            </div>
+            <div class="wei3">
+                <p>版权所有&copy;Jerry小窝2018-2020&nbsp;&nbsp;&nbsp;&nbsp;<script type="text/javascript" src="js/traffic.js"></script>
+                </p>
+                <p><a href="http://ha.beian.miit.gov.cn/publish/query/indexFirst.action" target="_blank">豫ICP备18044815-1</a></p>
+                <p>本站测试浏览器：Google Chrome(79.0.3945.130)、Microsoft Edge</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

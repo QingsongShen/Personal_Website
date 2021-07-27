@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+body,td,th {
+    font-size: 14px;
+}
+body {
+    background-color: #D0E3F4;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+	width:1280px;
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #E73134;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+.cl{
+	clear:both;
+}
+/*导航栏样式*/
+nav{
+	margin:0 0;
+	height:170px;
+	width:1280px;
+}
+.nav_daohang_zuo{
+    float: left;
+    width:160px;
+    height:170px;
+	margin:0 0;
+	pading:0 0;
+	position:relative;
+}
+.nav_daohang_zuo img{
+   position:absolute;
+	top:20px;
+	left:20px;
+	right:auto;
+}
+.nav_daohang_you{
+	float:right;
+	height:170px;
+	width:1120px;
+	margin:0 0;
+	pading:0 0;
+	position:relative;
+}
+.nav_daohang_you_bg{
+	width:1080px;
+	height:50px;
+	margin:0 0;
+	pading:0 0;
+	position:relative;
+}
+.nav_daohang_you_bg img{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.nav_daohang_you_xia{
+	width:1080px;
+	height:120px;
+}
+.nav_daohang_you_xia_biaoqian{
+	height:120px;
+	width:780px;
+	float:left;
+	position:relative;
+}
+.nav_daohang_you_xia_biaoqian img{
+	margin:0 0;
+	position:absolute;
+	left:0;top:0;
+	
+}
+.nav_daohang_you_xia_xiaowo{
+	height:120px;
+	width:280px;
+	float:right;
+	position:relative;
+}
+.nav_daohang_you_xia_xiaowo img{
+	position:absolute;
+	left:40px;
+}
+article{
+	margin:0 30 0 30;
+	height:400px; 
+	width:1280px;
+	pading:0 0;
+}
+.article_zuo{
+	width:340px;
+	height:330px;
+	float:left;
+	margin:0 0;
+	pading:0 0;
+	position:relative;
+}
+.article_zuo img{
+	position:absolute;
+	left:40px; 
+	top:20px;
+}
+.article_you{
+    width: 920px;
+    height: 330px;
+    float: right;
+    margin: 0 0;
+    pading: 0 0;
+    border-width: 0px;
+}
+.article_you_baidu{
+	height:100px;
+	width:920px;
+}
+.article_you_kuaijie_01{
+	width:920px;
+	height:100px;
+}
+article ul li{
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    width: 100px;
+    line-height: 40px;
+	margin:0 0 0 30px;
+}
+footer{
+   width:1280px; height:100px;
+}
+.footer_fenge{
+  	width:1280px; height:50px;
+	position:relative;
+}
+.footer_fenge img{
+	position:absolute;
+	top:5px;
+	left:310px;
+}
+.footer_sm{
+    width: 1280px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #7C7777;
+    border-radius: 5px;
+}
