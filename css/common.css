@@ -1,0 +1,73 @@
+/*定义通用样式*/
+/*底部版权文字自适应*/
+/*.right-data .multimedia p{*/
+/*    font-size: 20px;*/
+/*}*/
+
+@media (max-width: 870px) {
+    .right-data .multimedia p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .right-data .multimedia p span{
+        display: none;
+    }
+}
+
+
+/*定义contact页面样式*/
+/*定义验证框样式*/
+#contact-form .warning{
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+/*定义education页面样式*/
+.tab-meta .lessons{
+    position: relative;
+}
+.tab-meta .lessons li{
+    position: relative;
+    left: 50px;
+    list-style: none;
+    font-size: 10px;
+    line-height: 25px;
+    color: #7f7f7f;
+}
+
+/*technology 页面样式*/
+.typography h4.tech_title {
+    /*color: #89AFE0;*/
+}
+.typography h4.tech_title i{
+    display: inline-block;
+}
+.typography h4.tech_title i:after{
+    content: "  ";
+    white-space: pre;
+}
+
+.typography h5.tech_subtitle {
+    color: #000;
+}
+.typography h5.tech_subtitle i:after{
+    content: "  ";
+    white-space: pre;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

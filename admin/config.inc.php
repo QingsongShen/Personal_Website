@@ -1,0 +1,10 @@
+<?php
+date_default_timezone_set("Asia/Shanghai"); 
+//开启session会话
+session_status();
+header('Content-Type:text/html;charset=utf-8');
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASSWORD','245731968');
+define('DB_DATABASE','sqs');
+define('DB_PORT',3306);
