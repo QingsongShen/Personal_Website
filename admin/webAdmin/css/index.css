@@ -1,0 +1,72 @@
+body {
+  background-color: #eef2f8;
+  height: 100vh; }
+  body .container {
+    height: 100vh; }
+    body .container .navbar-vertical {
+      display: flex;
+      flex-direction: column; }
+      body .container .navbar-vertical .logo-wrapper {
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px; }
+      body .container .navbar-vertical .navbar-item {
+        display: flex; }
+        body .container .navbar-vertical .navbar-item .navbar-vertical-content .nav-link-text {
+          font-size: 14px;
+          color: #222529; }
+        body .container .navbar-vertical .navbar-item .navbar-vertical-content .active span {
+          color: #3f7ff4; }
+    body .container .dropdown-indicator {
+      position: relative; }
+    body .container .dropdown-indicator:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -40px;
+      height: .4rem;
+      width: .4rem;
+      border-right: 1px solid #5e6e82;
+      border-bottom: 1px solid #5e6e82;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      transition: all .2s ease-in-out;
+      transform-origin: center;
+      transition-property: transform,border-color; }
+    body .container .dropdown-indicator[aria-expanded=true]:after {
+      transform: translateY(-50%) rotate(225deg); }
+    body .container .user-info-wrapper {
+      height: 60px; }
+    body .container .management-content-wrapper .management-title {
+      font-size: 18px; }
+    body .container .management-content-wrapper .management-content tbody {
+      font-size: 14px; }
+      body .container .management-content-wrapper .management-content tbody button {
+        font-size: 12px; }
+    body .container .management-content-wrapper .management-content .dish-management-title {
+      height: 60px;
+      position: relative;
+      padding-left: 10px; }
+      body .container .management-content-wrapper .management-content .dish-management-title a::before {
+        content: "";
+        display: inline-block;
+        border-left: 3px solid #7f7f7f;
+        height: 16px;
+        position: absolute;
+        top: 22px;
+        left: 0; }
+    body .container .management-content-wrapper .management-content #dishCate #dishCateDeleteBtn {
+      width: 40px; }
+  body #staticBackdrop .modal-body div {
+    height: 80px;
+    margin-top: 10px; }
+  body #staticBackdrop .modal-body .name span {
+    display: inline-block; }
+  body #staticBackdrop .modal-body .email span {
+    display: inline-block; }
+  body #staticBackdrop .modal-body .comments span {
+    display: inline-block; }
+  body #staticBackdrop .modal-body .time span {
+    display: inline-block; }
+
+/*# sourceMappingURL=index.css.map */

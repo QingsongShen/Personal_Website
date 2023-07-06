@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""/>
+    <title>主页</title>
+    <script src="/js/jquery.js"></script>
+    <script src="./js/common.js"></script>
+    <link rel="stylesheet" href="/vendor/twbs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/handlebars.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <!-- 侧边导航条 -->
+            <nav class="nav navbar-light navbar-vertical">
+                <!-- 顶部logo -->
+                <div class="ml-2 logo-wrapper">
+                    <a href="#" class="navbar-brand">
+                        <div>
+                            <i class="bi bi-diagram-3"></i>
+                            <span>管理系统</span>
+                        </div>
+
+                    </a>
+                </div>
+                <!-- 导航条目 -->
+                <div class="navbar-collapse navbar-item mt-3">
+                    <div class="navbar-vertical-content scrollbar">
+                        <ul class="navbar-nav">
+                            <!-- 第一个子导航 -->
+                            <li class="nav-item">
+                                <!-- Title -->
+                                <a href="#resumeManagement"
+                                   class="nav-link dropdown-indicator"
+                                   role="button"
+                                   data-bs-toggle="collapse"
+                                   aria-expanded="true"
+                                   aria-controls="resumeManagement"
+                                >
+                                    <div>
+                                    <span class="">
+                                        <i class="bi bi-file-earmark-person"></i>
+                                        <span>简历系统管理</span>
+                                    </span>
+                                    </div>
+                                </a>
+                                <!-- 项目 -->
+                                <div class="collapse show" id="resumeManagement">
+                                    <ul class="nav nav-control flex-column align-items-center">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link active" data-target="navContent-message">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">留言信息管理</span>
+                                                </div>
+                                            </a>
+                                        </li>
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="#" class="nav-link">-->
+<!--                                                <div class="d-flex align-items-center">-->
+<!--                                                    <span class="nav-link-text">test2</span>-->
+<!--                                                </div>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="#" class="nav-link">-->
+<!--                                                <div class="d-flex align-items-center">-->
+<!--                                                    <span class="nav-link-text">test3</span>-->
+<!--                                                </div>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <!-- 第二个子导航 -->
+                            <li class="nav-item">
+                                <!-- Title -->
+                                <a href="#orderManagement"
+                                   class="nav-link dropdown-indicator"
+                                   role="button"
+                                   data-bs-toggle="collapse"
+                                   aria-expanded="true"
+                                   aria-controls="orderManagement"
+                                >
+                                    <div>
+                                    <span class="">
+                                        <i class="bi bi-cup-hot-fill"></i>
+                                        <span>点餐系统管理</span>
+                                    </span>
+                                    </div>
+                                </a>
+                                <!-- 项目 -->
+                                <div class="collapse show" id="orderManagement">
+                                    <ul class="nav nav-control flex-column align-items-center">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-target="navContent-info">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">餐厅通知管理</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-target="navContent-dish">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">餐厅菜品管理</span>
+                                                </div>
+                                            </a>
+                                        </li>
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="#" class="nav-link">-->
+<!--                                                <div class="d-flex align-items-center">-->
+<!--                                                    <span class="nav-link-text">小程序菜单</span>-->
+<!--                                                </div>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col-10">
+            <!-- 顶部信息栏 -->
+            <div class="user-info-wrapper d-flex align-items-center">
+                <div class="" style="width: 100%">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item list-items">
+                            <span class="welcome-message" id="welcome-message-content"></span>
+                            <span class="user-name">管理员</span>
+                            <a href="javascript:" id="logout" class="nav-link d-inline-block">注销登录</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 管理内容区 -->
+            <div class="management-content-wrapper mt-4">
+                <!-- 留言系统 -->
+                <div id="navContent-message" class="navContent">
+                    <!-- 当前项目标题 -->
+                    <div class="management-title">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-envelope-exclamation me-2"></i>
+                            <span>留言信息管理</span>
+                        </a>
+                    </div>
+
+                    <!-- 项目主体 -->
+                    <div class="management-content mt-2 ms-4 overflow-y-scroll" style="height: 600px">
+
+                        <!-- 留言信息管理 -->
+                        <div>
+                            <table class="table table-hove align-middle text-center">
+                                <thead>
+                                <tr>
+                                    <th scope="col">编号</th>
+                                    <th scope="col">留言时间</th>
+                                    <th scope="col">姓名</th>
+                                    <th scope="col">邮箱</th>
+                                    <th scope="col">内容</th>
+                                    <th scope="col">处理</th>
+                                    <th scope="col">处理时间</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <script id="template-commentWrapper" type="text/x-handlebars-template">
+                                    {{#each commentsList}}
+                                        <tr data-id="{{this.id}}">
+                                            <th scope="row" class="table-sm">{{this.id}}</th>
+                                            <td>{{this.createTime}}</td>
+                                            <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 110px">
+                                                    {{this.name}}
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 110px">
+                                                    {{this.email}}
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 110px">
+                                                    {{this.comments}}
+                                                </span>
+                                            </td>
+                                            <td>
+                                                {{#if this.isProcessed}}
+                                                    √
+                                                {{else}}
+                                                    ×
+                                                {{/if}}
+
+                                            </td>
+                                            <td>{{this.dealTime}}</td>
+                                            <td>
+                                                <button class="btn btn-success" {{#if this.isProcessed}}disabled{{/if}}>确认</button>
+                                            </td>
+                                        </tr>
+                                    {{/each}}
+                                </script>
+                                <tbody id="commentWrapper">
+                                <tr>
+                                    <th scope="row" class="table-sm">1</th>
+                                    <td>2020年6月10日 00:00:00</td>
+                                    <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 110px">
+                                                    测试标题1
+                                                </span>
+                                    </td>
+                                    <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 110px">
+                                                    这是一个测试邮箱1dadsadadasaccdcdcddv2
+                                                </span>
+                                    </td>
+                                    <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 110px">
+                                                    这是一个测试内容1dadsadadasaccdcdcddv2
+                                                </span>
+                                    </td>
+                                    <td>√</td>
+                                    <td>2023年6月28日 12:00:00</td>
+                                    <td>
+                                        <button class="btn btn-success">确认</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 餐厅信息管理 -->
+                <!-- >>>餐厅通知信息管理<<< -->
+                <div id="navContent-info" class="navContent d-none">
+                    <!-- 当前项目标题 -->
+                    <div class="management-title">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-card-checklist me-2"></i>
+                            <span>餐厅通知管理</span>
+                        </a>
+                    </div>
+
+                    <!-- 项目主体 -->
+                    <div class="management-content mt-2 ms-4 overflow-y-scroll" style="height: 500px">
+                        <!--添加新通知 -->
+                        <div class="mt-3 mb-3">
+                            <form action="javascript:"
+                                  id="newNoticeForm"
+                                  class="me-0 ms-0 row d-flex flex-row align-items-center justify-content-center"
+                            >
+                                <div class="col-5">
+                                    <input type="text"
+                                           name="newNotice"
+                                           id="newNotice"
+                                           class="form-control"
+                                           placeholder="请输入新的通知内容："
+                                           required
+                                           autofocus
+                                    >
+                                </div>
+                                <div class="col-2">
+                                    <button id="newNoticeSubmitButton" class="btn btn-success form-control" value="提交" type="submit">提交</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- 餐厅通知信息展示 -->
+                        <div>
+                            <table class="table table-hove align-middle text-center">
+                                <thead>
+                                <tr>
+                                    <th scope="col">编号</th>
+                                    <th scope="col">通知内容</th>
+                                    <th scope="col">创建时间</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <script id="template-notice-list" type="text/x-handlebars-template">
+                                    {{#each noticeList}}
+                                        <tr>
+                                            <th scope="row" class="table-sm">{{this.id}}</th>
+                                            <td>
+                                                <span class="d-inline-block text-truncate" style="max-width: 350px">
+                                                    {{this.content}}
+                                                </span>
+                                            </td>
+                                            <td>{{this.creationTime}}</td>
+                                            <td>
+                                                <button type="button"
+                                                        data-index="{{this.id}}"
+                                                        class="btn btn-success"
+                                                >
+                                                    删除
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    {{/each}}
+
+                                </script>
+                                <tbody id="dishNoticeList">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- >>>餐厅餐品信息管理<<< -->
+                <div id="navContent-dish" class="navContent d-none">
+                    <!-- 当前项目标题 -->
+                    <div class="management-title">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-cup-straw me-2"></i>
+                            <span>菜品信息管理</span>
+                        </a>
+                    </div>
+
+                    <!-- 项目主体 -->
+                    <div class="management-content mt-2 ms-4 overflow-y-scroll" style="height: 550px">
+
+                        <!-- 菜品信息展示 -->
+                        <div class="dish-management-title d-flex align-items-center">
+                            <a href="#" class="nav-link">
+                                <span>现有菜品</span>
+                            </a>
+                        </div>
+                        <div class="me-0 ms-0">
+                            <div class="row me-0 ms-0">
+                                <!-- 分类展示 -->
+                                <div class="col-3">
+                                    <script id="template-dishCate" type="text/x-handlebars-template">
+                                        {{#each dishList}}
+                                            <a
+                                                    class="d-flex list-group-item list-group-item-action justify-content-between"
+                                                    href="#list-item-{{this.id}}"
+                                            >
+                                                <div>{{this.cateName}}</div>
+                                                <button type="button" data-index="{{this.id}}" data-catename="{{this.cateName}}" class="dishCateDeleteBtn btn-sm btn btn-success">删除</button>
+                                            </a>
+                                        {{/each}}
+                                    </script>
+                                    <div id="dishCate" class="list-group overflow-y-scroll" style="max-height: 350px">
+
+                                    </div>
+                                </div>
+                                <!-- 分类items展示 -->
+                                <script id="template-dishItems" type="text/x-handlebars-template">
+                                    {{#each dishList}}
+                                        <div id="list-item-{{this.id}}">
+                                            <h4>{{this.cateName}}</h4>
+                                            <div class="dish-items">
+                                                <div>
+                                                    <table class="table table-hove align-middle text-center">
+                                                        <thead>
+                                                        <tr>
+                                                            <th scope="col">菜品名称</th>
+                                                            <th scope="col">菜品描述</th>
+                                                            <th scope="col">图片链接</th>
+                                                            <th scope="col">价格</th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        {{#each this.items}}
+                                                            <tr>
+                                                                <th scope="row" class="">{{this.title}}</th>
+                                                                <td>
+                                                                        <span class="d-inline-block text-truncate"
+                                                                              style="max-width: 150px">
+                                                                            {{this.description}}
+                                                                        </span>
+                                                                </td>
+                                                                <td>
+                                                                        <span class="d-inline-block text-truncate"
+                                                                              style="max-width: 150px">
+                                                                            {{this.img}}
+                                                                        </span>
+                                                                </td>
+                                                                <td>{{this.price}}</td>
+                                                                <td>
+                                                                    <button data-index="{{this.id}}" data-dishname="{{this.title}}" class="btn btn-success">删除</button>
+                                                                </td>
+                                                            </tr>
+                                                        {{/each}}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                </script>
+                                <div class="col-9">
+                                    <div data-bs-spy="scroll"
+                                         data-bs-target="#dishCate"
+                                         data-bs-smooth-scroll="true"
+                                         class="overflow-y-scroll"
+                                         tabindex="0"
+                                         style="max-height: 350px"
+                                         id="dishItems"
+                                    >
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- 菜品信息修改 -->
+                        <div class="mt-2 dish-management-title d-flex align-items-center ">
+                            <a href="#" class="nav-link">
+                                <span>菜品信息修改</span>
+                            </a>
+                        </div>
+                        <div class="dish-management-modify">
+                            <form action="javascript:" id="dishModificationForm">
+                                <div class="row align-items-end me-0 ms-0">
+                                    <div class="dish-cate col-3">
+                                        <script id="template-dishCate-select" type="text/x-handlebars-template">
+                                            <option value="" disabled selected hidden style="font-size: 10px">请选择菜品分类</option>
+                                            {{#each dishList}}
+                                                <option value="{{this.cateName}}">{{this.cateName}}</option>
+                                            {{/each}}
+                                        </script>
+                                        <select name="dish-cate-select" id="dish-cate-select" class="form-select"
+                                                aria-label="Default select dish-cate-select">
+
+                                        </select>
+                                        <input type="text" name="dish-cate-input" id="dish-cate-input"
+                                               class="form-control" disabled>
+                                    </div>
+                                    <div class="dish-title col-3">
+                                        <script id="template-dishItem-select" type="text/x-handlebars-template">
+                                            <option value="" disabled selected hidden>请选择菜品名称</option>
+                                            {{#each item.items}}
+                                                <option value="{{this.title}}">{{this.title}}</option>
+                                            {{/each}}
+                                        </script>
+                                        <select name="dish-title-select" id="dish-title-select" class="form-select"
+                                                aria-label="Default select dish-title-select">
+                                            <option value="" disabled selected hidden>请选择菜品名称</option>
+                                        </select>
+                                        <input type="text" name="dish-title-input" value="" id="dish-title-input"
+                                               class="form-control" placeholder="">
+                                    </div>
+                                    <div class="dish-description col-6">
+                                        <input type="text" value="" name="dish-description" id="dish-description"
+                                               class="form-control" placeholder="请输入菜品描述">
+                                    </div>
+
+                                </div>
+                                <div class="row mt-3 me-0 ms-0">
+                                    <div class="dish-image col-6">
+                                        <input type="text" value="" name="dish-image" id="dish-image" class="form-control"
+                                               placeholder="请输入菜品图片地址">
+                                    </div>
+                                    <div class="dish-price col-3">
+                                        <input type="text" value="" name="dish-price" id="dish-price" class="form-control"
+                                               placeholder="请输入菜品价格">
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-success" type="submit">提交</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+
+                        <!-- 菜品添加 -->
+                        <div class="mt-3 dish-management-title d-flex align-items-center">
+                            <a href="#" class="nav-link">
+                                <span>添加菜品</span>
+                            </a>
+                        </div>
+                        <div class="dish-management-modify">
+                            <form action="javascript:" id="dishAdditionForm">
+                                <div class="row align-items-end me-0 ms-0">
+                                    <div class="dish-cate col-3">
+                                        <select name="dishAdd-cate-select" id="dishAdd-cate-select" class="form-select"
+                                                aria-label="Default select dishAdd-cate-select">
+
+                                        </select>
+                                        <input type="text" name="dishAdd-cate-input" id="dishAdd-cate-input"
+                                               class="form-control">
+                                    </div>
+                                    <div class="dish-title col-3">
+                                        <input type="text" required name="dishAdd-title-input" id="dishAdd-title-input"
+                                               class="form-control" placeholder="请输入菜品名称">
+                                    </div>
+                                    <div class="dish-description col-6">
+                                        <input type="text" required name="dishAdd-description" id="dishAdd-description"
+                                               class="form-control" placeholder="请输入菜品描述">
+                                    </div>
+
+                                </div>
+                                <div class="row mt-3 me-0 ms-0">
+                                    <div class="dish-image col-6">
+                                        <input type="text" required name="dishAdd-image" id="dishAdd-image" class="form-control"
+                                               placeholder="请输入菜品图片地址">
+                                    </div>
+                                    <div class="dish-price col-3">
+                                        <input type="text" name="dishAdd-price" id="dishAdd-price" required  class="form-control"
+                                               placeholder="请输入菜品价格">
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-success" type="submit">提交</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="modalWrapper"></div>
+
+
+
+</div>
+<!-- Modal -->
+<script id="templateModal" type="text/x-handlebars-template">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">{{title}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {{content}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="{{cancelId}}" data-bs-dismiss="modal">{{cancelButton}}</button>
+                    <button type="button" class="btn btn-primary" id="{{confirmId}}">{{confirmButton}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="templateInfoModal" type="text/x-handlebars-template">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">{{title}}<span style="color: green;font-weight: bold;">{{#if item.isProcessed}}【已处理】{{/if}}</span></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="name align-middle">
+                        <h6>姓名：</h6>
+                        <span>&emsp;&emsp;{{item.name}}</span>
+                    </div>
+                    <div class="email">
+                        <h6>邮箱：</h6>
+                        <span>&emsp;&emsp;{{item.email}}</span>
+                    </div>
+                    <div class="message">
+                        <h6>留言：</h6>
+                        <span>&emsp;&emsp;{{item.comments}}</span>
+                    </div>
+                    <div class="time">
+                        <h6>时间：</h6>
+                        <span>&emsp;&emsp;{{item.createTime}}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="{{cancelId}}" {{#if item.isProcessed}}disabled{{/if}} data-bs-dismiss="modal">{{cancelButton}}</button>
+                    <button type="button" class="btn btn-primary" id="{{confirmId}}">{{confirmButton}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<script src="./js/index.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

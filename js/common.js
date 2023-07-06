@@ -10,11 +10,13 @@
         })
     })
 
-    $("#contact-form").submit(function (){
+
+
+    // 留言信息提交
+    $("#contact-form").on("submit", function (){
         let name = $("#name")
         let email = $("#email")
         let comments = $("#comments")
-
 
         //数据验证
 
@@ -49,24 +51,15 @@
             email: email.val(),
             comments: comments.val()
         }
-        // let xmlhttp = new XMLHttpRequest()
-        // xmlhttp.onreadystatechange=function(){
-        //     if (xmlhttp.readyState===4 && xmlhttp.status===200){
-        //         alert(xmlhttp.responseText)
-        //     }
-        // }
-        // xmlhttp.open("POST","/admin/contact.php",true)
-        // xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        // xmlhttp.send("param="+param)
         $.ajax({
             type : "POST",
             url : "/admin/contact.php",
             data : param,
             success : function (result){
-                alert("信息提交成功！！！")
+                alert(result)
             },
-            error: function (){
-                alert("信息提交失败，请稍后再试！！！")
+            error: function (result){
+                alert(result)
             }
         })
 

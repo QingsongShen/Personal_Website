@@ -1,0 +1,41 @@
+// login页面样式表
+body {
+  background-image: url(../image/bg.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+
+  .container{
+    height: 100%;
+
+    .form-wrapper{
+      height: 100%;
+
+      .form {
+        background: rgba(180,217,243,0.9);
+        height: 280px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        i {
+          display: inline-block;
+          position: relative;
+          top: 30px;
+          left: 5px;
+        }
+
+        #userName {
+          padding-left: 25px;
+        }
+
+        #password {
+          padding-left: 25px;
+        }
+
+
+
+      }
+    }
+  }
+;
+}

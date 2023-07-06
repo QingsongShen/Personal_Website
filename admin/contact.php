@@ -1,4 +1,5 @@
 <?php
+    header('Content-Type: application/json');
 	require_once("config.inc.php");
 	require_once("mysql.inc.php");
 	require_once("mail.inc.php");
@@ -15,10 +16,13 @@
 	// echo $name." ".$email." ".$comments;
 
 	//将信息储存进数据库
-	$query = "insert into message(name,email,comments,time) value('{$name}','{$email}','{$comments}',now())";
-	$result = execute_bool($link,$query);
-	
-	$tmp = send_message($result,$name,$email,$comments,date("Y-m-d H:i:s"));
-	echo $tmp;
+	$query = "insert into message(name,email,comments,createTime) value('{$name}','{$email}','{$comments}',now())";
+	if ($result = execute_bool($link, $query)){
+        $tmp = send_message($result,$name,$email,$comments,date("Y-m-d H:i:s"));
+        echo json_encode($tmp, JSON_UNESCAPED_UNICODE);
+    }else{
+        echo json_encode("留言提交失败，请稍后再试！", JSON_UNESCAPED_UNICODE);
+    }
+
 
 

@@ -30,6 +30,40 @@ function execute_bool($link,$query){
 	return $bool;
 }
 
+// 批量执行SQL语句
+function execute_multi($link, $query){
+    if (mysqli_multi_query($link, $query)) {
+        do {
+            /* 储存第一个结果集 */
+            if ($result = mysqli_store_result($link)) {
+                while ($row = mysqli_fetch_row($result)) {
+                    printf("%s\n", $row[0]);
+                }
+                // 释放结果集内存
+                mysqli_free_result($result);
+            }
+            /* print divider */
+            if (mysqli_more_results($link)) {
+                printf("-----------------\n");
+            }
+        } while (mysqli_next_result($link));
+    }
+};
+
+function execute_multi_bool($link, $query){
+    if (! mysqli_multi_query($link, $query)){
+        return false;
+    }
+    // 移动到下一个结果集，直到没有更多结果集为止
+    while (mysqli_next_result($link)) {
+        // 继续移动到下一个结果集
+    }
+    return true;
+};
+
+
+
+
 //数据入库之前进行转义，确保数据能够顺利入库
 function escape($link,$data){
     if(is_string($data)){
