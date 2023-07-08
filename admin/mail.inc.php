@@ -15,7 +15,7 @@ function send_message($stage, $userName, $emailAddress, $userComments,$commentTi
 	if ($stage){
 		try {
 		    //Server settings
-		    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+//		    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
 		    $mail->isSMTP();                                            //Send using SMTP
 		    $mail->Host       = 'smtp.163.com';                     //Set the SMTP server to send through
 		    $mail->CharSet = "UTF-8";
@@ -51,14 +51,13 @@ START;
 		    $mail->AltBody = "收到一条来自：{$userName}，邮箱为：{$emailAddress}的信息：{$userComments}，请及时处理";
 
 		    $mail->send();
-		    echo '信息提交成功！';
 		} catch (Exception $e) {
-	    	// echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+//	    	 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 	    	$error = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 			}
 
 		}
-	return $error;
+//	return $error;
 }
 
 

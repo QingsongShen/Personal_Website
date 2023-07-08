@@ -18,10 +18,13 @@
 	//将信息储存进数据库
 	$query = "insert into message(name,email,comments,createTime) value('{$name}','{$email}','{$comments}',now())";
 	if ($result = execute_bool($link, $query)){
-        $tmp = send_message($result,$name,$email,$comments,date("Y-m-d H:i:s"));
-        echo json_encode('留言提交成功！！！', JSON_UNESCAPED_UNICODE);
+        send_message($result,$name,$email,$comments,date("Y-m-d H:i:s"));
+        $message = "留言提交成功！！！";
+        echo json_encode($message, JSON_UNESCAPED_UNICODE);
+
     }else{
-        echo json_encode("留言提交失败，请稍后再试！", JSON_UNESCAPED_UNICODE);
+        $message = "留言提交失败，请稍后再试！";
+        echo json_encode($message, JSON_UNESCAPED_UNICODE);
     }
 
 

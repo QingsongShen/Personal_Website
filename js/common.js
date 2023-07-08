@@ -52,11 +52,14 @@
             comments: comments.val()
         }
         $.ajax({
-            type : "POST",
+            method : "POST",
             url : "/admin/contact.php",
             data : param,
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
             success : function (result){
-                alert(result)
+                alert(JSON.parse(result))
             },
             error: function (result){
                 alert(result)
