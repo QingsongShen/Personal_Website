@@ -48,7 +48,7 @@ function  checkLogin (okCallback, errorCallback){
     // 获取数据
     let username = getCookie("username")
     let token = getCookie('token')
-    console.log(username,token)
+    // console.log(username,token)
     if (! (username && token)){
         // 用户未登录
         errorCallback()

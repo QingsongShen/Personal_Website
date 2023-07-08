@@ -8,8 +8,8 @@ $(function (){
             alert("您已登录，点击确认跳转...")
             window.location.href = "./index.html"
         }
-    }, function (res){
-        console.log(res.responseText)
+    }, function (){
+        console.log(new Date())
     })
 
 
