@@ -31,6 +31,9 @@ $header = <<<A
 				</ul>
 			</li> -->
 			<li>
+            	<a href="working.html" title="">工作经历</a>
+            </li>
+			<li>
 				<a href="project.html" title="">项目经历</a>
 			</li>
 			<li>
@@ -61,7 +64,7 @@ $header = <<<A
 	</div>
 </div>
 <div class="head-social">
-	<button type="submit" class="butn butn-bg"><a href="pdf/web/viewer.html?file=resume.pdf" target="_blank">简历下载</a></button>
+	<button type="submit" class="butn butn-bg"><a href="javascript:" onclick='alert("未在求职状态，不开放查看！！！")' target="_blank">简历下载</a></button>
 	<!-- <div class="language-area">
 		<a href="https://wpkixx.com/html/manal-rtl-html/" title="">RTL</a>
 		<a href="https://wpkixx.com/html/manal-html/index.html" title="">ENG</a>
